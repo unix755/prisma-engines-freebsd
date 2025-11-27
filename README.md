@@ -1,7 +1,7 @@
 # prisma-engines-freebsd
 
 1. Scripts for building the prisma engine on your own device
-2. [Precompiled prisma engine](https://github.com/gek64/prisma-engines-freebsd/releases) for freebsd 12-14
+2. [Precompiled prisma engine](https://github.com/unix755/prisma-engines-freebsd/releases) for freebsd 12-14
 3. Prisma engine usage guide in freebsd
 
 ## usage
@@ -19,19 +19,19 @@
 case "$(uname -r)" in
 *"11."*)
   FreeBSD_Version=freebsd11
-  Prisma_Build=https://github.com/gek64/prisma-engines-freebsd/releases/download/latest/prisma-engines-FreeBSD_13.2-RELEASE_amd64.tar.gz
+  Prisma_Build=https://github.com/unix755/prisma-engines-freebsd/releases/download/latest/prisma-engines-FreeBSD_13.2-RELEASE_amd64.tar.gz
   ;;
 *"12."*)
   FreeBSD_Version=freebsd12
-  Prisma_Build=https://github.com/gek64/prisma-engines-freebsd/releases/download/latest/prisma-engines-FreeBSD_13.2-RELEASE_amd64.tar.gz
+  Prisma_Build=https://github.com/unix755/prisma-engines-freebsd/releases/download/latest/prisma-engines-FreeBSD_13.2-RELEASE_amd64.tar.gz
   ;;
 *"13."*)
   FreeBSD_Version=freebsd13
-  Prisma_Build=https://github.com/gek64/prisma-engines-freebsd/releases/download/latest/prisma-engines-FreeBSD_13.2-RELEASE_amd64.tar.gz
+  Prisma_Build=https://github.com/unix755/prisma-engines-freebsd/releases/download/latest/prisma-engines-FreeBSD_13.2-RELEASE_amd64.tar.gz
   ;;
 *"14."* | *)
   FreeBSD_Version=freebsd14
-  Prisma_Build=https://github.com/gek64/prisma-engines-freebsd/releases/download/latest/prisma-engines-FreeBSD_14.0-RELEASE_amd64.tar.gz
+  Prisma_Build=https://github.com/unix755/prisma-engines-freebsd/releases/download/latest/prisma-engines-FreeBSD_14.0-RELEASE_amd64.tar.gz
   ;;
 esac
 
@@ -74,9 +74,9 @@ cp "/usr/share/prisma-engines/libquery_engine.so.node" "$HOME/moneybook/node_mod
 
 ```sh
 # compile using prebuilt openssl
-curl -sSf https://raw.githubusercontent.com/gek64/prisma-engines-freebsd/main/build-prisma-engines.sh | sh
+curl -sSf https://raw.githubusercontent.com/unix755/prisma-engines-freebsd/main/build-prisma-engines.sh | sh
 # compile using openssl compiled from source
-curl -sSf https://raw.githubusercontent.com/gek64/prisma-engines-freebsd/main/build-prisma-engines.sh | sh -s -- -c
+curl -sSf https://raw.githubusercontent.com/unix755/prisma-engines-freebsd/main/build-prisma-engines.sh | sh -s -- -c
 
 # check
 ls "$HOME/prisma-engines-*.tar.gz"
